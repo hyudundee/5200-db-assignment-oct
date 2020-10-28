@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "sqlite3": "^5.0.0"
+  },
+  "name": "5200-db-assignment-oct",
+  "description": "Class assignment for CS5200",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyudundee/5200-db-assignment-oct.git"
+  },
+  "author": "Haoran Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyudundee/5200-db-assignment-oct/issues"
+  },
+  "homepage": "https://github.com/hyudundee/5200-db-assignment-oct#readme"
+}
