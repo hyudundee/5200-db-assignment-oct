@@ -1,8 +1,8 @@
 const sqlite3 = require("sqlite3").verbose();
-
 const db = new sqlite3.Database("newNewsFeed.sqlite3");
 
-const query = `BEGIN TRANSACTION;
+const query = `
+BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "User" (
 	"userID"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT NOT NULL,
@@ -39,4 +39,7 @@ INSERT INTO "JoinUserFriends" VALUES (1,1,2,'2020-10-03');
 INSERT INTO "JoinUserFriends" VALUES (2,3,2,'2020-10-05');
 INSERT INTO "JoinUserFriends" VALUES (3,2,3,'2020-10-05');
 COMMIT;
-`
+`;
+
+db.exec(query);
+db.close();
